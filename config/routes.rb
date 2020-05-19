@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
- 
   resources :categories
+  get '/category/:title', to: 'static_pages#category'
+  
   resources :items
   root 'static_pages#home'
   get '/help' => 'static_pages#help'
@@ -24,6 +25,8 @@ Rails.application.routes.draw do
   get 'orderitems/new'
 
   get 'orderitems/edit'
+  
+  post '/search' => 'items#search'
 
   #this allows the application to communicate with the db for the required order items 
   #based on the current order and automathically setting up routes to do it

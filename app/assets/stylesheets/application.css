@@ -13,11 +13,10 @@
  *= require_tree .
  *= require_self
  */
-
 .headSec {
     background: url("/assets/site/golfcourse.jpg");
-    background-repeat: no-repeat;
-    background-size:100% 100%;
+     background-repeat: no-repeat;
+     background-size:100% 100%;
     min-height:10px;
     background-color: #b3e0ff;
     width: 100%;
@@ -40,12 +39,10 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;    
-}
-
-li {
-    float:left;
     
 }
+
+li {float:left;}
 
 li a {
     display: block;
@@ -58,6 +55,7 @@ li a {
 
 
 .mainCont { 
+    
     margin: auto;
     width: 80%;
     border: 3px solid #b3e0ff;
@@ -65,9 +63,8 @@ li a {
     text-align: center;
 }
 
-.welcomeIm {
-    width: 30%;
-}
+.welcomeIm {width: 30%;}
+
 
 .foot {
     min-height: 80px;
@@ -75,13 +72,15 @@ li a {
     width: 100%;
     margin-top: 10px;
     overflow: auto;
+    
+    
 }
 
 .container {
-    background: url("/assets/site/clubhead.png");
-    background-repeat:no-repeat;
+ background: url("/assets/site/clubhead.png");
+      background-repeat:no-repeat;
     background-position:right bottom;
-    width: 100%;
+   width: 100%;
     min-height: 700px;
 }
 

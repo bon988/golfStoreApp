@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-    #@categories = Category.all
+    @categories = Category.all
     @items = Item.all
   end
 
