@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
  
+  resources :categories
   resources :items
   root 'static_pages#home'
   get '/help' => 'static_pages#help'
@@ -36,6 +37,7 @@ Rails.application.routes.draw do
   
   #this allows us to call the creatOrder method when we press the button
   get '/checkout' => 'cart#createOrder'
+  get '/paid/:id' => 'static_pages#paid'
    
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

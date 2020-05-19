@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
   end
   
   def paid
-    # redirect_to "/cart/clear"
+    #redirect_to "/cart/clear"
     flash[:notice] = 'Transaction Complete'
     @order = Order.last
     @order.update_attribute(:status , "Paid by User: #{current_user.email}")
