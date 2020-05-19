@@ -22,7 +22,6 @@
     width: 100%;
     margin-bottom:10px;
     overflow: auto;
-    
 }
 
 
@@ -30,7 +29,6 @@
     color: #ffffff;
     font-size: 80px;
     padding: 15px;
-    
 }
 
 ul { 
@@ -39,10 +37,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;    
-    
 }
 
-li {float:left;}
+li {
+    float:left;
+}
 
 li a {
     display: block;
@@ -50,20 +49,21 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
 }
 
-
 .mainCont { 
-    
     margin: auto;
-    width: 80%;
+    width: 60%;
     border: 3px solid #b3e0ff;
     padding: 10px;
     text-align: center;
 }
 
-.welcomeIm {width: 30%;}
+
+.welcomeIm {
+    width: 30%;
+    
+}
 
 
 .foot {
